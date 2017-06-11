@@ -1,0 +1,42 @@
+{
+  "name": "dele",
+  "version": "0.0.1",
+  "description": "www",
+  "main": "app.js",
+  "author": "tuski",
+  "license": "MIT",
+  "scripts": {
+    "start": "node run.js & gulp auto watch"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-progeny": "^0.4.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.5.0",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.0.0",
+    "koa-router": "^7.2.0",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.2",
+    "lodash": "^4.17.4",
+    "pug": "^2.0.0-rc.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1"
+  }
+}

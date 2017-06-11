@@ -1,0 +1,171 @@
+extends ../layout
+
+block styles
+  link(rel="stylesheet", href="styles/homepage/index.css",  media="all")
+
+block content
+  //- 幻灯片
+  #sections-wrapper
+    section.section-1.show(data-img='images/home/slider-bg1.jpg')
+    section.hide-bottom(data-img='images/home/shore.jpg')
+    section.hide-bottom(data-img='images/home/twilight.jpg')
+    section.hide-bottom(data-img='images/home/parachute.jpg')
+    section.hide-bottom(data-img='images/home/sky.jpg')
+    .sections-control.clearfix
+      .section-thumbnail.active
+      .section-thumbnail
+      .section-thumbnail
+      .section-thumbnail
+      .section-thumbnail
+
+  //- 核心产业链
+  #industry-chain
+    .module-title
+      span 核心产业链
+    article
+      a(href="",data-layzr="images/home/industry/industry-1.jpg",data-layzr-bg)
+        span 研发产品
+      a(href="",data-layzr="images/home/industry/industry-2.jpg",data-layzr-bg)
+        span 模具制造
+      a(href="",data-layzr="images/home/industry/industry-3.jpg",data-layzr-bg)
+        span 精密注塑
+      a(href="",data-layzr="images/home/industry/industry-4.jpg",data-layzr-bg)
+        span 批量组装
+      a(href="",data-layzr="images/home/industry/industry-5.jpg",data-layzr-bg)
+        span 品质把控
+
+  //- 产品中心
+  #product-center
+    .module-title
+      span 产品中心
+    .main.margin-center.clearfix
+      a.thumb-falf(href="")
+        .img-cover(data-layzr="images/home/product-center/product-center-1.jpg",data-layzr-bg)
+        .title 光学模具系列
+        p 都乐拥有世界上先进的超精密加工、检测设备，并完美地应用在光学模具加工上，解决了众多复杂光学产品的模具制作和生产加工难题，从而令产品的精度更高。
+      a.thumb-falf(href="")
+        .img-cover(data-layzr="images/home/product-center/product-center-2.jpg",data-layzr-bg)
+        .title 成像镜头系列
+        p 光学冷加工前后工程全部可以生产，各工序设备全国领先。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。光学冷加工前后工程全部可以生产，各工序设备全国领先。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。
+  
+    .main.margin-center.clearfix
+      a.thumb-three(href="")
+        .img-cover(data-layzr="images/home/product-center/product-center-3.jpg",data-layzr-bg)
+        .title 照明镜片系列
+        p 光学冷加工前后工程全部可以生产，各工序设备全国领先。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。
+      a.thumb-three(href="")
+        .img-cover(data-layzr="images/home/product-center/product-center-4.jpg",data-layzr-bg)
+        .title 机器人系列
+        p 光学冷加工前后工程全部可以生产，各工序设备全国领先。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。
+      a.thumb-three(href="")
+        .img-cover(data-layzr="images/home/product-center/product-center-5.jpg",data-layzr-bg)
+        .title 日本益智玩具系列
+        p 光学冷加工前后工程全部可以生产，各工序设备全国领先。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。技术人员稳定，特别是研磨工序积累了30年的技术沉淀。
+
+  //- 合作大客户
+  #logo-list
+    .module-title
+      span 产品中心
+    .main.margin-center.clearfix
+      img(data-layzr="images/home/logo-list.jpg")
+
+  #map(data-layzr="images/home/map.jpg",data-layzr-bg)
+    .main.margin-center
+      .address
+        .title 公司地理优势
+        .plan 1.距离东莞 、惠州以及深圳市其它区域车程50分钟左右
+        .plan 2.距离S28，G15高速口5分钟车程
+        .aim 深圳市龙岗区爱联工业区
+        .phone 电话：+86-755-84530172
+        
+
+
+
+
+  //- #l-map
+  //- //- #r-result
+
+
+
+  .footer-nav
+    .main.margin-center.clearfix
+      .slogan
+        .title 深圳市都乐精密制造有限公司
+        .slogan-text 质量树品牌  诚信铸伟业
+      .footer-nav-list
+        .footer-thumb
+          .title 关于都乐
+          a(href="") 公司概况
+          a(href="") 董事长致辞
+          a(href="") 管理团队
+          a(href="") 发展历程
+          a(href="") 都乐荣誉
+
+        .footer-thumb
+          .title 卓越能力
+          a(href="") 研发团队
+          a(href="") 制造能力
+          a(href="") 品质护航
+          a(href="") 销售领先
+
+        .footer-thumb
+          .title 产品中心
+          a(href="") 光学模具系列
+          a(href="") 成像镜头系列
+          a(href="") 照明镜片系列
+          a(href="") 机器人系列
+          a(href="") 日本益智玩具系列
+
+        .footer-thumb
+          .title 都乐文化
+          a(href="") 企业理念
+          a(href="") 公司活动
+
+        .footer-thumb
+          .title 联系都乐
+          a(href="") 都乐招聘
+          a(href="") 业务洽谈
+
+        .footer-thumb
+          .title 联系我们
+          a(href="") 电话：+86-755-84530172
+          a(href="") 邮箱：Dule@sz-dule.com
+          a(href="javascript:;")
+            span 微信：
+            img(src="images/home/wei2.jpg")
+
+
+  script(src='scripts/anime.min.js')
+  script(src='scripts/interaction.js')
+  //- script(src="http://api.map.baidu.com/api?v=2.0&ak=2124651fb51bafca71883eaaa99fa5e5")
+  //- script.
+  //-   var map = new BMap.Map("l-map"); 
+  //-   map.centerAndZoom(new BMap.Point(114.229332,22.759743), 100);
+  //-   var local = new BMap.LocalSearch(map, {
+  //-     renderOptions: {map: map, panel: "r-result"}
+  //-   });
+  //-   var opts = {offset: new BMap.Size(150, 5)}    
+  //-   map.addControl(new BMap.ScaleControl(opts));
+  //-   local.search("深圳市龙岗区爱联工业区");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

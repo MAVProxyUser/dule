@@ -5,7 +5,5 @@
 * es2015
 * yarn
 * koa2
-* webpack
-* babel
-* vue 2
+* gulp
 * pug

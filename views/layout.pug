@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport",content="initial-scale=1.0, user-scalable=no")
+    block meta
+    link(rel="stylesheet", href="styles/base.css",  media="all")
+    link(rel="stylesheet", href="styles/common.css",  media="all")
+    link(rel="stylesheet", href="styles/share/header.css",  media="all")
+    link(rel="stylesheet", href="styles/share/footer.css",  media="all")
+    title index
+    block styles
+  body
+    include share/header
+
+    block content
+    
+    include share/footer
+    
+    block scripts
+    script(src='scripts/plugins/layzr/layzr.min.js')
+    script.
+      var layzr = new Layzr({
+        selector: '[data-layzr]',
+        attr: 'data-layzr',
+        retinaAttr: 'data-layzr-retina',
+        bgAttr: 'data-layzr-bg',
+        threshold: 50,
+        callback: null
+      });
