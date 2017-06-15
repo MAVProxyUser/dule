@@ -1,22 +1,42 @@
 module.exports = {
   async index(ctx, next) {
-    await ctx.render('about/index.pug',{});
+    const req = ctx.request;
+    await req.render_views('about/index.pug' ,{
+      page_type: 'about',
+      feature_nav: 'index',
+    });
   },
 
   async speech(ctx, next) {
-    await ctx.render('about/speech.pug',{});
+    const req = ctx.request;
+    await req.render_views('about/speech.pug' ,{
+      page_type: 'about',
+      feature_nav: 'speech',
+    });
   },
 
   async managers(ctx, next) {
-    await ctx.render('about/managers.pug',{});
+    const req = ctx.request;
+    await req.render_views('about/managers.pug' ,{
+      page_type: 'about',
+      feature_nav: 'managers',
+    });
   },
 
   async development(ctx, next) {
-    await ctx.render('about/development.pug',{});
+    const req = ctx.request;
+    await req.render_views('about/development.pug' ,{
+      page_type: 'about',
+      feature_nav: 'development',
+    });
   },
 
   async honors(ctx, next) {
-    await ctx.render('about/honors.pug',{});
+    const req = ctx.request;
+    await req.render_views('about/honors.pug' ,{
+      page_type: 'about',
+      feature_nav: 'honors',
+    });
   },
 }
 

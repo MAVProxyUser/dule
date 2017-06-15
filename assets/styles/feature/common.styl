@@ -4,14 +4,19 @@
   position relative
   z-index 10
 
-
+// 
 #feature-body
   min-height 500px
+  position relative
+  z-index 20
 
+// 二级导航
 #nav-2
+  position absolute
   width 245px
-  padding-top 260px
   padding-left 25px
+  top -35px
+  left 0
   .nav-2-head
     height 110px
     padding-top 24px
@@ -49,6 +54,7 @@
         a
           color #fff
 
+// feature  主体
 #feature-content
   padding-top 35px
   padding-left 320px
@@ -74,6 +80,54 @@
       margin-bottom 20px
     img
       padding 20px 0 0 0
-    
+  .products-list
+    width 915px
+    .products-thumb
+      display block
+      float left
+      margin-right 35px
+      margin-bottom 40px
+      width 270px
+      height 285px
+      padding 12px
+      border 1px solid #E6E6E6
+      p
+        font-size 15px
+        color #39393D
+        line-height 22px
+        padding 4px
+        height 44px
+        overflow hidden
 
+.pagination
+  width 880px
+  height 70px
+  padding-top 20px
+  text-align center
+  ul
+    display inline-block
+  li
+    float left
+    height 32px
+    text-align center
+    line-height 25px
+    a
+      padding 0 10px
+      display block
+      color #39393D
+      margin-top 3px
+    &.active
+      a
+        background-color #D0021B
+        color #fff
+  .prev,.next
+    height 32px
+    padding 0 8px
+    margin 0 10px
+    border 1px #E6E6E6 solid
+    text-align center
+    line-height 32px
+    a
+      padding 0
+      margin-top 0
 

@@ -18,14 +18,14 @@ module.exports = function (req) {
       }
 
       var extra = "", //需要额外追加的参数
-          path_key = 'images/' + (m_path || path).replace(/^\//, ''),
-          cdn_key = settings.need_cdn_map && (global.ImagesCDN || {})[path_key];
-      if(!key && cdn_key) {
-        //线上环境，如果图片没有key，表明可能未编译，则在映射文件中查找是否存在
-        //path/a-md5.jpg => md5
-        extra = "?from=cdnMap";
-        key = cdn_key; // get cdn key
-      }
+          path_key = 'images/' + (m_path || path).replace(/^\//, '');
+          // cdn_key = settings.need_cdn_map && (global.ImagesCDN || {})[path_key];
+      // if(!key && cdn_key) {
+      //   //线上环境，如果图片没有key，表明可能未编译，则在映射文件中查找是否存在
+      //   //path/a-md5.jpg => md5
+      //   extra = "?from=cdnMap";
+      //   key = cdn_key; // get cdn key
+      // }
 
       return req.assets_path(m_path || path, key, 'images', m_path, extra);
     },
@@ -39,12 +39,8 @@ module.exports = function (req) {
       if (path[0] == '/') path = path.substring(1);
       return locale_path + path;
     },
-    url: function (path, secret, locale) {
-      var locale_path = req.get_locale_path(false, locale),
-          origin = secret == 'https' ? settings.origin.replace('http://', 'https://') : settings.origin;
-      var l_url = origin + locale_path + path;
-      if(l_url != '/' && /\/$/g.test(l_url)) { l_url = l_url.substring(0, l_url.length - 1); }
-      return l_url;
+    url: function (path) {
+      return `http:\/\/localhost:3000/${path}`;
     },
     //===== 返回带设备，语言信息的路径
     urls_with_langs_and_device: function (url, langs, devices) {

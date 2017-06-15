@@ -6,7 +6,7 @@
   "author": "tuski",
   "license": "MIT",
   "scripts": {
-    "start": "node run.js & gulp auto watch"
+    "start": "NODE_ENV=development node run.js & gulp auto watch"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",

@@ -17,7 +17,6 @@ const config = require('../config/dev');
 // 中间件
 const bind_req_helper = require('./middlewares/bind_req_helper');
 
-
 // app.use(async (ctx, next) => {
 //   console.log('111')
 //   await next();

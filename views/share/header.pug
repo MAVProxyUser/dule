@@ -1,20 +1,20 @@
 header
   .main.margin-center
     a.logo(href="/")
-      img(src="images/share/logo@2x.png")
+      img(src=image_path("share/logo@2x.png"))
       span.name 深圳市都乐精密制造有限公司
     nav
       .nav-list
-        .nav-name.active
-          a(href='about') 关于都乐
-        .nav-name 
-          a(href) 卓越能力
-        .nav-name 
-          a(href) 产品中心
-        .nav-name 
-          a(href) 都乐文化
-        .nav-name 
-          a(href) 联系都乐
+        .nav-name(class=get_nav_active(page_type, 'about'))
+          a(href=url('about')) 关于都乐
+        .nav-name(class=get_nav_active(page_type, 'capacity'))
+          a(href=url('capacity')) 卓越能力
+        .nav-name(class=get_nav_active(page_type, 'products'))
+          a(href=url('products/optics')) 产品中心
+        .nav-name(class=get_nav_active(page_type, 'culture')) 
+          a(href=url('culture')) 都乐文化
+        .nav-name(class=get_nav_active(page_type, 'contact'))
+          a(href=url('contact')) 联系都乐
       .webcat
         a(href) 微信二维码
       .language

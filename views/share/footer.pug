@@ -7,36 +7,36 @@
     .footer-nav-list
       .footer-thumb
         .title 关于都乐
-        a(href="") 公司概况
-        a(href="") 董事长致辞
-        a(href="") 管理团队
-        a(href="") 发展历程
-        a(href="") 都乐荣誉
+        a(href=url("about")) 公司概况
+        a(href=url("about/speech")) 董事长致辞
+        a(href=url("about/managers")) 管理团队
+        a(href=url("about/development")) 发展历程
+        a(href=url("about/honors")) 都乐荣誉
 
       .footer-thumb
         .title 卓越能力
-        a(href="") 研发团队
-        a(href="") 制造能力
-        a(href="") 品质护航
-        a(href="") 销售领先
+        a(href=url("capacity")) 研发团队
+        a(href=url("capacity/engineer")) 制造能力
+        a(href=url("capacity/quality")) 品质护航
+        a(href="javascript:;") 销售领先
 
       .footer-thumb
         .title 产品中心
-        a(href="") 光学模具系列
-        a(href="") 成像镜头系列
-        a(href="") 照明镜片系列
-        a(href="") 机器人系列
-        a(href="") 日本益智玩具系列
+        a(href=url("products/optics")) 光学模具系列
+        a(href=url("products/lenses")) 成像镜头系列
+        a(href=url("products/lamp")) 照明镜片系列
+        a(href=url("products/robot")) 机器人系列
+        a(href=url("products/toys")) 日本益智玩具系列
 
       .footer-thumb
         .title 都乐文化
-        a(href="") 企业理念
-        a(href="") 公司活动
+        a(href=url("culture")) 企业理念
+        a(href=url("culture")) 公司活动
 
       .footer-thumb
         .title 联系都乐
-        a(href="") 都乐招聘
-        a(href="") 业务洽谈
+        a(href=url("contact")) 都乐招聘
+        a(href=url("contact/recruit")) 业务洽谈
 
       .footer-thumb
         .title 联系我们
@@ -44,7 +44,7 @@
         a(href="") 邮箱：Dule@sz-dule.com
         a(href="javascript:;")
           span 微信：
-          img(src="images/home/wei2.jpg")
+          img(src=image_path("home/wei2.jpg"))
 
 footer
   .main.margin-center

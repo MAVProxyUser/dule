@@ -1,0 +1,67 @@
+extends ../layout
+
+block styles
+  link(rel="stylesheet", href=stylesheet_path("feature/common.css"),  media="all")
+
+block content
+  //- 幻灯片
+  
+  #feature-banner
+    .main.margin-center
+
+  #feature-body.main.margin-center
+    include share/nav
+    #feature-content
+      .breadcrumb 网站首页 > 产品中心
+      .products-list.clearfix
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+ 
+        a.products-thumb(href=url('#'))
+          img(src=image_path('products/cover.png'))
+          p coming soon ...
+ 
+      .pagination
+        ul#pagination2
+
+block scripts
+  script(src=javascript_path('plugins/jqPaginator/jqPaginator.js'))
+  script.
+    //- $.jqPaginator('#pagination1', {
+    //-     totalPages: 100,
+    //-     visiblePages: 10,
+    //-     currentPage: 3,
+    //-     onPageChange: function (num, type) {
+    //-         $('#p1').text(type + '：' + num);
+    //-     }
+    //- });
+    $.jqPaginator('#pagination2', {
+        totalPages: 100,
+        visiblePages: 10,
+        currentPage: 3,
+        prev: '<li class="prev"><a href="javascript:;"><上一页</a></li>',
+        next: '<li class="next"><a href="javascript:;">下一页></a></li>',
+        page: '<li class="page"><a href="?page={{page}}">{{page}}</a></li>',
+        onPageChange: function (num, type) {
+            $('#p2').text(type + '：' + num);
+        }
+    });
+
+
+
+
+
+
