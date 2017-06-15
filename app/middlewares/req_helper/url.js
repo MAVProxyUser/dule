@@ -40,7 +40,7 @@ module.exports = function (req) {
       return locale_path + path;
     },
     url: function (path) {
-      return `http:\/\/localhost:3000/${path}`;
+      return utils.isProductionEnv() ? `http:\/\/www.sz\-dule.com/${path}` : `http:\/\/localhost:3000/${path}`;
     },
     //===== 返回带设备，语言信息的路径
     urls_with_langs_and_device: function (url, langs, devices) {
